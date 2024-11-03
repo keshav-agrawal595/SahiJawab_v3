@@ -730,10 +730,13 @@ def main():
         
         with cols_keys[1]:
             # default_google_api_key = os.getenv("GOOGLE_API_KEY") if os.getenv("GOOGLE_API_KEY") is not None else ""  # only for development environment, otherwise it should return None
+            
+            default_google_api_key = os.getenv("GOOGLE_API_KEY") if os.getenv("GOOGLE_API_KEY") is not None else ""
             with st.popover("🔐 Google"):
-                if 'GOOGLE_API_KEY' in st.secrets:
+                if default_google_api_key:
                     st.success('GOOGLE API key already provided!', icon='✅')
-                    google_api_key = st.secrets['GOOGLE_API_KEY']
+                    # google_api_key = st.secrets['GOOGLE_API_KEY']
+                    google_api_key=os.getenv("GOOGLE_API_KEY")
                 else:
                     google_api_key = st.text_input("Introduce your Google API Key (https://aistudio.google.com/app/apikey)", type="password")
 
