@@ -11,7 +11,7 @@
 <h1 align="center">⚖️ Sahi Jawab — AI Legal Assistant</h1>
 <p align="center">
   <b>Developed by <a href="https://github.com/keshav-agrawal595">Keshav Agrawal</a></b><br>
-  Intel Unnati Project Submission • Version 3
+  Project Submission • Version 3
 </p>
 
 ---
@@ -133,5 +133,5 @@
 
 <p align="center">  
   © 2025 • <b>Keshav Agrawal</b>  
-  <br>Intel Unnati — <i>Sahi Jawab v3</i>  
+  <br><i>Sahi Jawab v3</i>  
 </p>
